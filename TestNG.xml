@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>	
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Suite" parallel="methods">
 	<test name="Test1">
 		<classes>
-			<class name="com.test.Flipkart" />
-			<class name="com.test.GetTitleTest" />
-			<class name="com.TestNG.Assign.AmazonTestNGAssign">
+			<!-- <class name="com.test.Flipkart" /> -->
+			 <!-- <class name="com.test.GetTitleTest" /> -->
+			<!--<class name="com.TestNG.Assign.AmazonTestNGAssign">
 				<methods>
 					<include name="testTitle" />
 					<exclude name="testTab" />
 				</methods>
-			</class>
-			<class name="com.TestNG.Assign.FacebookTestNG" />
+			</class> 
+			<class name="com.TestNG.Assign.FacebookTestNG" />-->
+			<class name="com.test.SessionHandlingTest" />
 		</classes>
 	</test>
 </suite>
